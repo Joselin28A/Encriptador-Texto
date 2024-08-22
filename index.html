@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador Texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="logo__alura" src="./assets/Logo.png" alt="Logo Alura">
+    </header>
+
+    <main class="container">
+        
+        <section class="texto__encriptado">
+            <textarea  class="entrada__texto" id="textoUsuario" placeholder="Ingresa el texto aquí" rows="40" cols="100" oninput="validarTexto()"></textarea>
+
+            <div class="reglas__botones">
+                <h2 class="texto__reglas"> 
+                    <img class="imagen__exclamacion" src="./assets/Vector.png" alt="Imagen exclamacion">
+                    Solo letras minúsculas y sin acentos
+                </h2>    
+                <div class="botones__encriptar">
+                    <button class="boton__encriptar" onclick="encriptar();">Encriptar</button>
+                    <button class="boton__desencriptar" onclick="desencriptar();">Desencriptar</button>
+                </div>
+            </div>            
+        </section>
+
+        
+        <div class="texto__boton" id="textoBoton">
+            <img id="imagenDetective" class="imagen__detective" src="./assets/Muñeco.png" alt="Imagen detective">
+            <textarea id="salidaTexto"  class="texto__salida" placeholder="Ningun mensaje fue encontrado" readonly></textarea>            
+            <p id="mensajeInicial2" class="mensaje__inicial__p">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button id="botonCopiar" class="boton__copiar" onclick="copiar();">Copiar</button>
+
+        </div>
+        
+        
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por José Torres | Agosto 2024</p>  
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
